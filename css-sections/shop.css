@@ -300,7 +300,6 @@ li {
   align-items: flex-start;
   height: 70vh;
   overflow: auto;
-  /* overflow-y: hidden; */
   background-color: var(--clr-dr-grey);
 }
 .section3::-webkit-scrollbar {

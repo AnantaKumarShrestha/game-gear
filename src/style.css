@@ -99,6 +99,10 @@ a:hover::before {
 }
 /* components end */
 
+header {
+  position: relative;
+}
+
 /* top nav start*/
 .nav1 {
   display: flex;
@@ -147,7 +151,68 @@ a:hover::before {
 .nav2-right {
   font-size: var(--font-lg_1-333rem);
 }
-/* bottom nav bottom */
+/* bottom nav end */
+
+/* bottom nav products section */
+
+.nav2-products-section {
+  /* height: 20rem; */
+  width: 100%;
+  background-color: var(--defaultBlack);
+  /* position: fixed; */
+  opacity: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.nv2-product {
+  height: 50%;
+  width: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+  text-align: center;
+  font-size: var(--font-lg_1-333rem);
+  font-weight: 500;
+
+  transition: 0.3s;
+  transition-delay: 0.1s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.nv2-product1 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1670274609267-202ec99f8620?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.nv2-product2 {
+  background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.nv2-product3 {
+  background-image: url(https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.nv2-product4 {
+  background-image: url(https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.nv2-product5 {
+  background-image: url(https://images.unsplash.com/photo-1526657782461-9fe13402a841?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.nv2-product6 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1681702156223-ea59bfbf1065?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.nv2-product7 {
+  background-image: url(https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* bottom nav products section end */
 
 /* seciton 1 start */
 

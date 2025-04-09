@@ -1,19 +1,35 @@
-const navBottomElement = document.querySelectorAll(".nav-bottom-element");
-const navBottomHoverContent = document.querySelector(".nav-bottom-hover-content");
 
-navBottomElement.forEach((e) => {
-  e.addEventListener("mouseover", (e) => {
-    navBottomHoverContent.style.height = "12.5rem";
-  });
-});
-navBottomElement.forEach((e) => {
-  e.addEventListener("mouseout", (e) => {
-    navBottomHoverContent.style.height = "0";
-  });
-});
-navBottomHoverContent.addEventListener("mouseover", () => {
-  navBottomHoverContent.style.height = "12.5rem";
-});
-navBottomHoverContent.addEventListener("mouseout", () => {
-  navBottomHoverContent.style.height = "0rem";
-});
+const nav2product = document.querySelector("#nv2-pd");
+const navBottomProduct = document.querySelector(".nav2-products-section");
+const nav2products = document.querySelectorAll(".nv2-product");
+
+console.log(nav2product);
+console.log(navBottomProduct);
+
+
+
+nav2product.addEventListener("mouseover", () => {
+  navBottomProduct.style.height = "20rem";
+  navBottomProduct.style.opacity = "1";
+
+  nav2products.forEach((e) => {
+    e.style.display = "block";
+    e.style.color = "var(--clr-white)";
+  })
+})
+
+nav2product.addEventListener("mouseout", () => {
+  navBottomProduct.style.height = "0rem";
+  
+  nav2products.forEach((e) => {
+    e.style.color = "var(--clr-black)";
+  })
+})
+
+navBottomProduct.addEventListener("mouseover", () => {
+  navBottomProduct.style.height = "20rem";
+})
+
+navBottomProduct.addEventListener("mouseout", () => {
+  navBottomProduct.style.height = "0rem";
+})
