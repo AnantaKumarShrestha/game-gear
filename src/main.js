@@ -9,8 +9,8 @@ console.log(navBottomProduct);
 
 
 nav2product.addEventListener("mouseover", () => {
-  navBottomProduct.style.height = "20rem";
-  navBottomProduct.style.opacity = "1";
+  navBottomProduct.style.height = "30rem";
+  navBottomProduct.style.opacity = "2";
 
   nav2products.forEach((e) => {
     e.style.display = "block";
